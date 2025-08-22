@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📝 My Blog</h1>
+
+  <section id="blog-form">
+    <h2>Add New Blog</h2>
+    <input type="text" id="title" placeholder="Enter Title">
+    <textarea id="content" placeholder="Enter Content"></textarea>
+    <button onclick="addBlog()">Post Blog</button>
+    <p id="message"></p> <!-- Feedback message -->
+  </section>
+
+  <section id="blog-list">
+    <h2>All Blogs</h2>
+    <div id="loader" class="loader" style="display:none;"></div>
+    <div id="blogs"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
